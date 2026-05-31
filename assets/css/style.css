@@ -57,6 +57,28 @@ a:hover {
   text-decoration: none;
 }
 
+.top-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.nav-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--on-surface-var);
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary);
+  background: rgba(208, 188, 255, 0.08);
+  text-decoration: none;
+}
+
 /* Content */
 main {
   max-width: 720px;
@@ -64,7 +86,14 @@ main {
   padding: 48px 24px;
 }
 
-/* Post list */
+/* Post and project lists */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
 .post-list {
   list-style: none;
   display: flex;
