@@ -1,1 +1,14 @@
-Hello World
+---
+layout: default
+---
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li class="post-card">
+    <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    {% if post.excerpt %}
+    <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>

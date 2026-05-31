@@ -1,0 +1,6 @@
+title: mcslackum
+description: ""
+url: "https://mcslackum.github.io"
+baseurl: ""
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
